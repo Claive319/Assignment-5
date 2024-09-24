@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-lexend{
+            font-family: "Lexend", sans-serif;
+        }
+        .sticky-element{
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+    </style>
+</head>
+<body class="font-lexend">
+  <header class="sticky-element">
+    <div class=" navbar h-[92px] bg-green-200		">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div  role="button" >
+              <button class="btn btn-success ml-44 bg-sky-500	 border-none px-12">Blog</button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="navbar-center flex justify-between">
+          <img src="assets/logo.png" alt="">
+          <p class="text-xl"></p>
+          <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+      </div>
+      <div class="navbar-end flex gap-6">
+          <img src="assets/coin.png" alt="">
+        <p id="balance" class="text-xl text-gray-600">5500 BDT</p>
+      </div>
+    </div>
+    
+
+  </header>
+  <section class=" ">
+    <div class="flex justify-center mt-10 gap-8">
+      <button id="the-mainDonation-btn" class="btn bg-[#B4F461]">Donation</button>
+      <button id="history-btn" class="btn bg-[#B4F461]">History</button>
+    </div>
+   
+    <div id="donation-page" class="flex flex-col px-8 mx-auto relative  w-[1160px] h-[453px]  my-6 ">
+      <!-- Noakhali Starts Here-->
+      <div class="card md:card-side bg-base-100 mx-auto border border-[#1111111A]">
+        <figure>
+          <img class="w-[480px] rounded-lg"
+            src="./assets/noakhali.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body w-[522px]  flex">
+          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt=""><span id="noakhali-current-ammount">120392</span></div>
+          <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+          <p class="text-sm text-[#111111B3]">The recent floods have caused serious disruptions and significant losses for the local communities in Feni. Your generous donation will help provide emergency relief like food, clean water, and medical supplies for those impacted by this disaster. After this tragedy, by collaborating, we can offer crucial assistance and help rebuild lives. Every attempt contributes to making a meaningful difference. Kindly consider donating today to assist those in urgent need.</p>
+          
+          <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
+          <button id="noakhali-btn" class="btn btn-primary">Donate Now</button>
+        </div>
+      </div>  
+      <!-- Feni Section Stats here  -->
+      <div class="card md:card-side bg-base-100 mx-auto border border-[#1111111A]">
+        <figure>
+          <img class="w-[480px] rounded-lg"
+            src="./assets/feni.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body w-[522px]  flex">
+          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt="">120392</div>
+          <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+          <p class="text-sm text-[#111111B3]"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+          
+          <input type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
+          <button class="btn btn-primary">Donate Now</button>
+        </div>
+      </div> 
+       <!--Feni Section Ends Here  -->
+       <!-- QUOTA MOVEMENT STARTS HERE  -->
+      <div class="card md:card-side bg-base-100 mx-auto border border-[#1111111A]">
+        <figure>
+          <img class="w-[480px] rounded-lg"
+            src="./assets/quota-protest.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body w-[522px]  flex">
+          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt="">120392</div>
+          <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+          <p class="text-sm text-[#111111B3]">The recent floods have caused serious disruptions and significant losses for the local communities in Feni. Your generous donation will help provide emergency relief like food, clean water, and medical supplies for those impacted by this disaster. After this tragedy, by collaborating, we can offer crucial assistance and help rebuild lives. Every attempt contributes to making a meaningful difference. Kindly consider donating today to assist those in urgent need.</p>
+          
+          <input type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
+          <button class="btn btn-primary">Donate Now</button>
+        </div>
+      </div>
+      <div class="card bg-base-100  shadow-xl absolute align-middle  justify-center mx-72 p-12 mt-3 top-0 z-[1000] hidden">
+        <div class="card-body">
+          <h1 class="font-bold text-center text-2xl">Congrats!</h1>
+          <p>You have donated for humankid</p>
+          <h1 class="text-2xl text-center">Successfully</h1>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary mx-auto">Close Now</button>
+          </div>
+        </div>
+      </div>  
+      
+    </div>
+  </section>
+  <script src="./Js/task1.js"></script>
+</body>
+</html>
