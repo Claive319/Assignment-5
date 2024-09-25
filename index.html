@@ -76,12 +76,12 @@
             alt="Album" />
         </figure>
         <div class="card-body w-[522px]  flex">
-          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt="">120392</div>
+          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt=""><span id="feni-current-ammount">120392</span></div>
           <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p class="text-sm text-[#111111B3]"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
           
-          <input type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
-          <button class="btn btn-primary">Donate Now</button>
+          <input id="feni-input" type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
+          <button id="feni-btn" class="btn btn-primary">Donate Now</button>
         </div>
       </div> 
        <!--Feni Section Ends Here  -->
@@ -93,21 +93,22 @@
             alt="Album" />
         </figure>
         <div class="card-body w-[522px]  flex">
-          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt="">120392</div>
+          <div  class="badge badge-lg p-5"><img src="./assets/coin.png" alt=""><span id="quota-current-ammount"></span>120392</div>
           <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p class="text-sm text-[#111111B3]">The recent floods have caused serious disruptions and significant losses for the local communities in Feni. Your generous donation will help provide emergency relief like food, clean water, and medical supplies for those impacted by this disaster. After this tragedy, by collaborating, we can offer crucial assistance and help rebuild lives. Every attempt contributes to making a meaningful difference. Kindly consider donating today to assist those in urgent need.</p>
           
-          <input type="number" placeholder="Write Donation Amount" class="input input-bordered" required />
-          <button class="btn btn-primary">Donate Now</button>
+          <input id="quota-input-value" type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
+          <button id="quota-btn" class="btn btn-primary">Donate Now</button>
         </div>
       </div>
-      <div class="card bg-base-100  shadow-xl absolute align-middle  justify-center mx-72 p-12 mt-3 top-0 z-[1000] hidden">
-        <div class="card-body">
+      <div id="modal" class="card bg-base-100  shadow-xl absolute align-middle  justify-center mx-72 p-12 mt-3 top-0 z-[1000] hidden">
+        <div class="card-body flex">
           <h1 class="font-bold text-center text-2xl">Congrats!</h1>
+          <img class="w-[20px] h-[20px] mx-auto" src="./assets/coin.png" alt="">
           <p>You have donated for humankid</p>
           <h1 class="text-2xl text-center">Successfully</h1>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary mx-auto">Close Now</button>
+            <button id="close-modal" class="btn btn-primary mx-auto">Close Now</button>
           </div>
         </div>
       </div>  
