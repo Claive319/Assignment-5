@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-lexend{
+            font-family: "Lexend", sans-serif;
+        }
+        .sticky-element{
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+    </style>
+
+</head>
+<body class="font-lexend">
+    <header class="sticky-element">
+        <div class=" navbar h-[92px] bg-green-200		">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div  role="button" >
+                  <button class="btn btn-success ml-44 bg-sky-500	 border-none px-12">Blog</button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="navbar-center flex justify-between">
+              <img src="assets/logo.png" alt="">
+              <p class="text-xl"></p>
+              <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end flex gap-6">
+              <img src="assets/coin.png" alt="">
+            <p id="balance" class="text-xl text-gray-600">5500 BDT</p>
+          </div>
+        </div>
+        
+    
+      </header>
+      <section>
+        <div class="flex gap-4"><h1 class="text-6xl font-extrabold text-start ml-14">Important Faq</h1><div class="tenor-gif-embed" data-postid="3974677598476429036" data-share-method="host" data-aspect-ratio="0.714859" data-width="2%"><a href="https://tenor.com/view/kjh-gif-3974677598476429036">Kjh GIF</a>from <a href="https://tenor.com/search/kjh-gifs">Kjh GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
+        <br>
+        <div class="flex gap-9 p-">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-3xl font-extrabold">How do you manipulate elements styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-xl font-semibold">I would manipulate style by getting the id by document.getelementbyid('the prefered id of that element').style and then the style like 'backgroundColor' or any other Style ='then here I would set the Style'</p>
+                </div>
+              </div>
+    
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-3xl font-extrabold">What is Domcument Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p class="text-xl font-semibold">DOM or Document object model is that Browser doesnt understand HTML Language , so browser is taken note as all the html element and documantation and stores it as an Object , so thus it is called an Object model and as it is a Documented files it is thus Called Document Object Model. </p>
+                </div>
+              </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-3xl font-extrabold">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-xl font-semibold">I would select the element of the DOM by document.getelementbyname("the name of that element I want to choose")</p>
+                </div>
+              </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-3xl font-extrabold">What is event delegation in the context of the Dom?</div>
+                <div class="collapse-content">
+                  <p class="text-xl font-semibold">Event Delegation is a method where Javascript handles event that is very high functionalities from the perspective of programming from user perspective also such as EVENT Bubbling and Event LSITENER TO increase Efficiency and Productivity of a JS file.</p>
+                </div>
+            
+    
+          </div>
+       
+        
+      </section>
+    <script src="./Js/task1.js"></script>
+</body>
+</html>
