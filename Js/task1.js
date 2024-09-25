@@ -66,7 +66,7 @@ document.getElementById('feni-btn').addEventListener('click', function(){
             
 
 
-            <p class="text-xl text-gray-900">${feniValue} taka is donated for famine-2024 at Noakhali, Bangladesh</p>
+            <p class="text-xl text-gray-900">${feniValue} taka is donated for famine-2024 at Feni, Bangladesh</p>
             <p>Date : ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}${new Date().toGMTString()}</p>
         `
         const historynewButton = document.getElementById('history-latest');
@@ -99,7 +99,7 @@ document.getElementById('quota-btn').addEventListener('click', function(){
             
 
 
-            <p class="text-xl text-gray-900">${quotaValue} taka is donated for Aid for Injured in the quota Movement ,2024, Bangladesh</p>
+            <p class="text-xl text-gray-900">${quotaValue} taka is donated for Aid for Injured in the Quota Movement ,2024, Bangladesh</p>
             <p>Date : ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}${new Date().toGMTString()}</p>
         `
         const historynewButton = document.getElementById('history-latest');
