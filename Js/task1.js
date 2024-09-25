@@ -80,7 +80,7 @@ document.getElementById('quota-btn').addEventListener('click', function(){
     const quotaValue = parseFloat(document.getElementById('quota-input-value').value);
     if(isNaN(quotaValue) || quotaValue<=0){
         alert('Invalid Input');
-        document.getElementById('quota-input-value').value = '';
+        document.getElementById('quota-input-value').value='';
     } 
     else{
         const quotaAmmount = parseFloat(document.getElementById('quota-current-ammount').innerText);
