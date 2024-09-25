@@ -24,7 +24,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
             document.getElementById('modal').classList.add('hidden');
         })
         const newHistoy = document.createElement('div');
-        newHistoy.classList = 'bg-white w-[980px] p-3 rounded-md border-1-2 border-indigo-500';
+        newHistoy.classList = 'border-base-300 w-[max] mx-auto text-center  flex justify-center border-t px-4 py-16';
         newHistoy.innerHTML=`
             
 
@@ -61,7 +61,7 @@ document.getElementById('feni-btn').addEventListener('click', function(){
             document.getElementById('modal').classList.add('hidden');
         })
         const newHistoy = document.createElement('div');
-        newHistoy.classList = 'bg-white w-[980px] p-3 rounded-md border-1-2 border-indigo-500';
+        newHistoy.classList = 'border-base-300 w-[max] mx-auto text-center flex justify-center border-t px-4 py-16';
         newHistoy.innerHTML=`
             
 
@@ -93,6 +93,17 @@ document.getElementById('quota-btn').addEventListener('click', function(){
         document.getElementById('close-modal').addEventListener('click', function(){
             document.getElementById('modal').classList.add('hidden');
         })
+        const newHistoy = document.createElement('div');
+        newHistoy.classList = 'border-base-300 w-[max] mx-auto text-center flex justify-center border-t px-4 py-16';
+        newHistoy.innerHTML=`
+            
+
+
+            <p class="text-xl text-gray-900">${quotaValue} taka is donated for Aid for Injured in the quota Movement ,2024, Bangladesh</p>
+            <p>Date : ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}${new Date().toGMTString()}</p>
+        `
+        const historynewButton = document.getElementById('history-latest');
+        historynewButton.insertBefore(newHistoy, historynewButton.firstChild);
     }
 })
 
