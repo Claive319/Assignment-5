@@ -84,9 +84,11 @@ document.getElementById('quota-btn').addEventListener('click', function(){
     } 
     else{
         const quotaAmmount = parseFloat(document.getElementById('quota-current-ammount').innerText);
+        
         const sumQuota = quotaValue + quotaAmmount;
         currentBalance = currentBalance - quotaValue;
         document.getElementById('quota-current-ammount').innerText=sumQuota;
+        
         document.getElementById('balance').innerText = currentBalance;
         document.getElementById('modal').classList.remove('hidden');
         document.getElementById('modal').style.transform ='translate(50px, 50px) scale(1.5)';
