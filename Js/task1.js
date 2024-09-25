@@ -1,13 +1,5 @@
 
 let currentBalance = parseFloat(document.getElementById('balance').innerText);
-const container = document.createElement('div');
-container.classList.add('hidden');
-container.style.height = "380px";
-container.style.background = "white";
-container.style.border='2px solid tomato'
-document.body.appendChild(container);
-const paragraph = document.createElement('p');
-
 
 document.getElementById('noakhali-btn').addEventListener('click', function(){
     //
@@ -31,11 +23,18 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
         document.getElementById('close-modal').addEventListener('click', function(){
             document.getElementById('modal').classList.add('hidden');
         })
-        // history section dontation adding page 
+        const newHistoy = document.createElement('div');
+        newHistoy.classList = 'bg-white w-[980px] p-3 rounded-md border-1-2 border-indigo-500';
+        newHistoy.innerHTML=`
+            
+
+
+            <p class="text-xl text-gray-900">${noakhaliValue} taka is donated for famine-2024 at Noakhali, Bangladesh</p>
+            <p>Date : ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}${new Date().toGMTString()}</p>
+        `
+        const historynewButton = document.getElementById('history-latest');
+        historynewButton.insertBefore(newHistoy, historynewButton.firstChild);
         
-        paragraph.innerText = 'This is adding bla bla bal balbalblablalbalbal'; 
-        container.appendChild(paragraph);
-        container.classList.add('hidden'); 
     }
     
     
@@ -61,6 +60,19 @@ document.getElementById('feni-btn').addEventListener('click', function(){
         document.getElementById('close-modal').addEventListener('click', function(){
             document.getElementById('modal').classList.add('hidden');
         })
+        const newHistoy = document.createElement('div');
+        newHistoy.classList = 'bg-white w-[980px] p-3 rounded-md border-1-2 border-indigo-500';
+        newHistoy.innerHTML=`
+            
+
+
+            <p class="text-xl text-gray-900">${feniValue} taka is donated for famine-2024 at Noakhali, Bangladesh</p>
+            <p>Date : ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}${new Date().toGMTString()}</p>
+        `
+        const historynewButton = document.getElementById('history-latest');
+        historynewButton.insertBefore(newHistoy, historynewButton.firstChild);
+        
+        
 
     }
 })
@@ -91,11 +103,13 @@ document.getElementById('history-btn').addEventListener('click', function(){
     document.getElementById('history-btn').style.backgroundColor ='green';
     document.getElementById('donation-page').classList.add('hidden');
     document.getElementById('the-mainDonation-btn').style.backgroundColor= 'lightgray';
-    container.classList.remove('hidden');
+    document.getElementById('history-latest').classList.remove('hidden');
+    
 })
 const buttonClicked = document.getElementById('the-mainDonation-btn');
 let isClicked = false;
 buttonClicked.addEventListener('click', function(){
+    document.getElementById('history-latest').classList.add('hidden');
     isClicked =true;
     if(isClicked==true){
         document.getElementById('donation-page').classList.remove('hidden');
@@ -104,6 +118,7 @@ buttonClicked.addEventListener('click', function(){
     document.getElementById('the-mainDonation-btn').style.backgroundColor = 'green';
     document.getElementById('history-btn').style.backgroundColor = 'lightgray';
     historyBtn.classList.remove('btn');
+   
 
     
 })
